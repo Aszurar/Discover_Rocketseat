@@ -1,0 +1,193 @@
+<!-- 
+    <table></table>
+    Prós
+        -Visualização de dados via linhas e colunas.
+        -Boa acessibilidade para leitura dos dados.
+    Contras
+        -Pouco flexível
+        -Precisa de estilização para melhor visualização.
+    Não usar
+        -Para criar seu layout
+-->
+
+<table>
+    <caption>Pessoas por idade</caption>
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Idade</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>Lucas de Lima</td>
+            <td>23</td>
+        </tr>
+
+        <tr>
+            <td>João Batista</td>
+            <td>50</td>
+        </tr>
+    </tbody>
+
+    <tfoot>
+        <tr>
+            <td>Total:</td>
+            <td>2 pessoas</td>
+        </tr>
+    </tfoot>
+
+</table>
+
+<br>
+<br>
+
+
+<table>
+    <!-- Tabela -->
+    <caption> <!--Legenda da tabela, breve descrição--></caption>
+
+
+    <thead>
+        <!--Cabeçalho da tabela-->
+        <tr> <!--Linhas da tabela, seja do cabeçalho, ou do corpo, ou do rodapé-->
+            <th scope="col/row/rowgroup or colgroup">
+                <!--Coluna do cabeçalho-->
+            </th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <!-- Corpo principal da tabela, onde contém so dados -->
+        <tr>
+            <td> 
+                <!--Coluna do corpo principal da tabela
+                    e o do rodapé--> 
+            </td>
+        </tr>
+    </tbody>
+
+    <tfoot>
+        <!-- Rodapé da tabela -->
+        <tr>
+            <td></td>
+        </tr>
+    </tfoot>
+
+</table>
+
+<table style="border-spacing: 0; color:
+             white; 
+             font-family: sans-serif;">     
+    <caption>Personagens do Genshin</caption>
+    
+    <col style="background: linear-gradient(35deg, blue, red);">
+
+
+    <thead style="letter-spacing: 1.5px;">
+        <tr>
+            <th scope="col">Personagens</th>
+            <th scope="col" 
+                style="background: linear-gradient(35deg, blue, red);"
+                >Elementos</th>
+            <th scope="col" 
+                style="background: linear-gradient(35deg, blue, red);"
+                >Visões</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>Klee</td>
+            <td style="background:linear-gradient(35deg,black, red );"
+                >Fogo</td>
+            <td style="background:linear-gradient(35deg, red, black);"
+                >Pyro</td>
+        </tr>
+
+        <tr>
+            <td>Qiqi</td>
+            <td style="background:linear-gradient(35deg, black, aqua);"
+                >Gelo</td>
+            <td style="background:linear-gradient(35deg, aqua, black);"
+                >Cryo</td>
+        </tr>
+
+        <tr>
+            <td>Lisa</td>
+            <td style="background:linear-gradient(35deg, black, rgb(200, 23, 200));"
+                >Eletricidade</td>
+            <td style="background:linear-gradient(35deg, rgb(200, 23, 200), black);"
+                >Electro</td>
+        </tr>
+
+        <tr>
+            <td >Mona</td>
+            <td style="background:linear-gradient(35deg, black, blue);"
+                >Água</td>
+            <td style="background:linear-gradient(35deg, black, blue);"
+                >Hydro</td>
+        </tr>
+        <tr>
+            <td>Amber</td>
+            <td style="background:linear-gradient(35deg, black, red);"
+                >Fogo</td>
+            <td style="background:linear-gradient(35deg, red, black);"
+                >Pyro</td>
+        </tr>
+
+        <tr>
+            <td>Noelle</td>
+            <td style="background:linear-gradient(35deg, black, brown);"
+                >Pedra</td>
+            <td style="background:linear-gradient(35deg, brown, black);"
+                >Geo</td>
+        </tr>
+
+        <tr>
+            <td>Fischl</td>
+            <td style="background:linear-gradient(35deg, black, rgb(200, 23, 200));"
+                >Eletricidade</td>
+            <td style="background:linear-gradient(35deg, rgb(200, 23, 200), black);"
+                >Electro</td>
+        </tr>
+
+        <tr>
+            <td>Jean</td>
+            <td style="background:linear-gradient(35deg, black, rgb(34, 255, 119));"
+                >Vento</td>
+            <td style="background:linear-gradient(35deg, rgb(34, 255, 119), black);"
+                >Anemo</td>
+        </tr>
+
+        <tr>
+            <td>Ningguang</td>
+            <td style="background:linear-gradient(35deg, black, brown);"
+                >Pedra</td>
+            <td style="background:linear-gradient(35deg, brown, black);"
+                >Geo</td>
+        </tr>
+
+        <tr>
+            <td>Keqing</td>
+            <td style="background:linear-gradient(35deg, black, rgb(200, 23, 200));"
+                >Eletricidade</td>
+            <td style="background:linear-gradient(35deg, rgb(200, 23, 200), black);"
+                >Electro</td>
+        </tr>
+
+    </tbody>
+
+    <tfoot style="letter-spacing: 1.5px;">
+        <tr style="font-weight: bold">
+            <td>
+                Total:
+            </td>
+            <td style="background: linear-gradient(35deg, blue, red);"
+            >11 Personagens
+            </td>
+        </tr>
+    </tfoot>
+
+</table>

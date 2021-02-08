@@ -1,0 +1,27 @@
+<!-- 
+    <input type="file">
+
+    - Usuário poderá escolher 1 ou mais arquivos para enviar no formulário
+
+    # Atributos
+        - value
+            * contém o arquivo a ser enviado
+        - accept
+            * descreve que tipos de arquivos serão aceitos
+            - exemplo: .doc, .docx, .pdf, audio/*, images/png, .png
+            tipo-do-arquivo/* - o Asterístico indica que todos os formatos daquele tipo de arquivo
+            serão aceitos, exemplo: video/*, audio/*, image/*
+
+        - files
+            - A lista de arquivos ou arquivos
+        - multiple
+            = permite o envio de múltiplos arquivos
+        
+        # Envio dos arquivos
+            * Para o envio dos arquivos o formulátio deverá utilizar o método
+            POST e o atributo enctype como "multipart/form-data"
+ 
+-->
+<form action="" method="post" enctype="multipart/form-data">
+    <input type="file" name="" id="">
+</form>

@@ -1,0 +1,43 @@
+<!-- 
+    <input type="email"/>
+
+    - Espera que o usuário digite um email
+    - Irá validar se o valor digitado for um email ...@dominio.com.br
+
+    # Atributos
+
+    - placeholder
+    - readonly / disabled
+    - value
+    - required
+    - multiple
+        * O campo irá receber 1 ou mais emails, separados por vírgula
+    - minlength / maxlenght
+    - size
+    *Valor numérico que indica quantos caracteres esse input receberá de forma visual
+
+    - pattern
+        - Exepressão regular:
+            Ex: pattern=".+@rocketseat/.com/.br"
+    - title
+    - list
+        * É linkado a uma datalist por meio do id dessa datalist
+        *Sugere opções de emails
+
+ -->
+
+ <form action="">
+    <datalist id="emailist">
+        <option>lms.souza@rocketseat.com.br</option>
+        <option>luca_m.s@rocketseat.com.br</option>
+        <option>matheus@rocketseat.com.br</option>
+    </datalist>
+    
+    <input type="email" 
+     placeholder="Email" 
+     pattern=".+@rocketseat/.com/.br"
+     title="Digite um email com o padrão ...@rocketseat.com.br"
+     list="emailist"
+     required>
+     <button type="submit">Enviar</button>
+ </form>

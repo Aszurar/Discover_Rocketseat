@@ -1,0 +1,64 @@
+<!-- <input type="checkbox" 
+    - Caixas que podem ser marcadas
+    - Selecionar um valor para ser enviado
+    - Se não selecionado, não será enviado nenhum dado
+
+    # Atributos
+        - globais
+        - value
+            * O valor que o campo contém, caso marcado será enviado esse valor
+            * Caso o atributo valor não esteja definido, então por padrão, caso marcado
+            o valor a ser enviado será "on"
+        - checked
+            * para deixar o campo marcado por padrão
+        --> 
+
+        <label for="inscrito">Receber Notificações</label>
+        <input type="checkbox" 
+               name="inscrito" 
+               id="inscrito"
+               checked>
+
+<!-- Multiplos Valores
+    - Usaremos o atributo name, com o mesmo nome para os diversos campos:
+    - No backend será recebido uma lista com o nome em comum dos campos, em conjunto
+    com os valores deles caso selecionados
+    Exe:
+        interest: [ Musica, Jogos, Mangas...]
+-->
+<fieldset>
+    <legend>Interesses</legend>
+
+    <div>
+        <label for="music">Musica</label>
+        <input type="checkbox"
+            id="music" 
+            name="interest"
+            value="music">
+    </div>
+
+    <div>
+        <label for="Jogos">Jogos</label>
+        <input type="checkbox"
+            id="Jogos" 
+            name="interest"
+            value="Jogos">
+    </div>
+
+    <div>
+        <label for="Anime">Anime</label>
+        <input type="checkbox"
+            id="Anime" 
+            name="interest"
+            value="Anime">
+    </div>
+
+    <div>
+        <label for="Manga">Manga</label>
+        <input type="checkbox"
+            id="Manga" 
+            name="interest"
+            value="Manga">
+    </div>
+
+</fieldset>

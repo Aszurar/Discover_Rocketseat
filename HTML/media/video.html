@@ -1,0 +1,43 @@
+<!-- Video
+
+    -src
+    -controls
+    - se não funcionar?
+        -fallback content
+    -source
+        -src
+        -type
+        -Especificando o vídeo
+    
+    -serviços de terceiros
+        -uso de youtube, vimeo...
+
+    -Atributos
+        - Podemos ajustar a largura, altura do vídeo usando atributos como:
+        width e height
+
+        preload: auto - Assim que a página é carregada o video já começa carregar
+        preload: metadata - Carregará assim como o anterior mas somente o básico 
+        preload: none - Não carregará o vídeo antes que o usuário aperte o play
+        loop: Reproduz o vídeo novamente automaticamente
+        muted: Começar mutado
+        poster="./icon.png" - Por uma imagem de fundo, uma capa no vídeo antes que ele reproduza
+    -->
+
+     <!-- Forma básica de por um vídeo, mas pode não funcionar -->
+<video src="./AniWord2.mp4"></video>
+
+<!-- Melhorando: -->
+<video src="./AniWord2.mp4" controls></video>
+<br>
+<br>
+<br>
+<!-- Melhorando mais -->
+<video controls
+     width="1280"
+     height="720"
+     preload="auto"
+     loop
+>
+    <source src="./AniWord2.mp4" type="video/mp4">
+</video>

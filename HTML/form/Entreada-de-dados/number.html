@@ -1,0 +1,23 @@
+<!-- 
+    <input type="number">
+    - Entrada de números
+
+    # Atributos
+    - min/max - número mínimo ou numero máximo que podem ser escolhidos
+    - step - Passo a passo do crescimento dos números
+ -->
+
+<datalist id="numbers">
+    <option>100</option>
+    <option>200</option>
+</datalist>
+
+ <form action="">
+     <input type="number" 
+            placeholder="Digite o número"
+            min="0"
+            max="1000"
+            step="5"
+            list="numbers">
+     <button type="submit">Enviar</button>
+ </form>

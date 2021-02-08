@@ -1,0 +1,29 @@
+<!-- Video
+
+    -src
+    -controls
+    - se não funcionar?
+        -fallback content
+        - mandar uma tag p infornando que não suporta o conteúdo
+    -source
+        -src
+        -type
+        -Especificando o vídeo
+    -Atributos
+        - controls - Funciona como o de vídeo.
+        - autoplay - Reproduzir o aúdio automaticamente.
+        - muted - Mutar o aúdio
+        preload: auto - Assim que a página é carregada o video já começa carregar
+
+        preload: metadata - Carregará assim como o anterior mas somente o básico 
+
+        preload: none - Não carregará o vídeo antes que o usuário aperte o play
+
+        loop: Reproduz o vídeo novamente automaticamente
+
+    -->
+
+    <audio controls autoplay loop>
+        <source src="./Outer Wilds - Traveller Theme - Piano; Solanum Solo - 10 minutes.mp3" type="audio/mp3">
+        <p>Seu navegador não suporta audio.</p>
+    </audio>

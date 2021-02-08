@@ -1,0 +1,35 @@
+<!-- ATRIBUTOS COMUNS 
+
+- type -> Define qual tipo de input será usado
+
+- autocomplete - Tenta completar a informação do input de acordo 
+com os dados mais frquentemente usados para aquele tipo de input
+Consulta o histórico de dados usados no navegador
+
+- autofocus - Só um por página, ele fará com que ao carregar a página
+o navegador já foque a vizualização nesse input, com ele já selecionado
+
+- disabled - Desabilita o input, o usuário não consegue digitar no input
+
+- value - Define um valor padrão já para o input
+
+- readonly - Semelhante ao disabled, mas não deixa o input opaco
+
+- form (quase todos itpos de input) - linkar o input ao formulário
+
+- name - Palavra chave de cada input, Chave/valor
+
+- required - Torna obrigatório o preenchimento daquele input
+- placeholder - Explicita o dado que deve ser posto no input 
+-->
+
+<form action="" id="meu-form"></form>
+
+<input type="text" form="meu-form" autofocus required>
+<br>
+<input type="email" autocomplete="email" value="lms.souza39@gmail.com" disabled>
+
+<!-- OBS: Não substituímos o label pelo placeholder! -->
+<br>
+<label for="name">Nome</label>
+<input type="text" name="name" id="name" placeholder="Digite seu nome">

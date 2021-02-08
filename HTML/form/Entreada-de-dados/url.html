@@ -1,0 +1,37 @@
+<!-- <input type="url" 
+
+    - Espera que o usuário digite uma url
+    - Irá validar se o valor digitado for uma url
+    
+    # Atributos
+    - placeholder
+    - readonly / disabled
+    - required
+
+    - minlength / maxlenght
+    - size
+
+    - pattern
+        Expressão regular:
+            * pattern=".*\com.\br/.*"
+    - list / datalist
+
+    -spellcheck
+        * Habilita a verificação ortográfica para o input
+        : false, true
+    -->
+
+<form action="">
+    <datalist id="lista">
+        <option>https://exemplo.com.br</option>
+        <option>https://exemplo.com.br</option>
+        <option>https://exemplo.com.br</option>
+    </datalist>
+    <input type="url" 
+        placeholder="https://exemple.com"
+        pattern=".*\com.\br/.*"
+        title="Somente domínios .com.br serão aceitos"
+        list="lista"
+        required>
+    <button type="submit">Enviar</button>
+</form>
