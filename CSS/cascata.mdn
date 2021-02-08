@@ -1,0 +1,65 @@
+# A Cascata (cascading)
+
+A escolha do navegador de qual regra aplicar, caso haja muitas regras par ao mesmo elemento
+
+* Seu estilo é lido de cima para baixo
+
+É levado em consideração 3 fatores:
+1. Origem do estilo (_h2, h3, body..._)
+2. Especificidade (_.container h2, #data-home p..._)
+3. Importância (_!important > id >class_)
+
+### Origem do Estilo
+inline > tag style > tag link
+
+### Especificidade
+É um cálculo matématico, onde, cada tipo de seletor e origem de estilo, possuem valores a serem considerados.
+Quanto Maior o valor, mais forte erá
+
+0. Universal Selector, combinators e negation pseudo-class(:not())
+   * Exemplo:
+        ```css
+            * {
+                margin: 0;
+                border: 0;
+                padding: 0;
+             }
+        ```
+1. Element type selector e pseudo-element(::before, ::after)
+    * Exemplo:
+        ```css
+            h1 {
+               color: gray;
+               margin: 20px;  
+             }
+        ```     
+10. Classes e atributos Seletores([type="radio"])
+    * Exemplo:
+        ```css
+            .container h2 {
+               color: gray;
+               margin: 20px;  
+             }
+            .data-home {
+                padding: 20px
+            }
+        ```   
+100. ID selector
+     * Exemplo:
+        ```css
+            #container h2 {
+               color: gray;
+               margin: 20px;  
+             }
+        ```   
+1000. Inline
+      * Exemplo:
+        ```html
+            <h1 style="color: blue;">Título</h1>
+        ```   
+10000. !important
+       * Sobrescreve qualquer outra configuração CSS
+       * Evite usar
+       * Único caso sugerido é quando estiver trabalhando com a biblioteca/framework de CSS e queira sobrescrever determinado estilo
+       * Quebra o fluxo natural da cascata.
+       * Não é considerado boa prática  

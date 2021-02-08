@@ -1,0 +1,89 @@
+/* 
+Pseudo-elements
+    Com pseudo-elements nós podemos adicionar elementos HTML pelo próprio CSS
+    Exp: ::pseudo-element-name
+    
+Exempos: 
+    * ::before 
+    * ::after 
+    * ::first-line
+
+Referência
+    https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-element    */
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+body {
+    text-align: center;
+    background-color:crimson;
+    font-family: sans-serif;
+}
+
+h1 {
+    background-color: black;
+    padding: 1rem;
+    color: white;
+    width:100%;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    text-shadow: 7px 2px 5px rgb(241, 75, 108);
+    font-weight: normal;
+}
+
+ul {
+    background-color: black;
+    margin: 2rem auto;
+    width: 55rem;
+    border-radius: 1rem;
+}
+
+ul li {
+    list-style-position: inside;
+    margin-right: 2rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+    position: relative;
+}
+ul li:first-child {
+    color:  rgb(238, 47, 47);
+}
+
+ul li:nth-child(2) {
+    color: aquamarine;
+}
+ul li:nth-of-type(3) {
+    margin-left: 1.5rem;
+    color: rgb(65, 65, 230);
+}
+
+ul li::before {
+    content: "";
+    height: 1px;
+    width: 48%;
+    background-color: rgb(112, 112, 233);
+    position: absolute;
+    left: 0;
+    bottom: 1rem;
+}
+
+
+
+ul li::after {
+    content: "";
+    height: 1px;
+    width: 45%;
+    background-color: rgb(112, 112, 233);
+    position: absolute;
+    bottom: 1rem;
+}
+
+ul li:nth-of-type(1)::after {
+    background-color: rgb(238, 47, 47);
+}
+
+ul li:nth-of-type(1)::before{
+    background-color: rgb(238, 47, 47);
+}

@@ -1,0 +1,59 @@
+/* Combinatores
+    Combinadores, pois eles trabalham para buscar e combinar seletores a fim de aplicar uma estilização
+
+    Descenders combinator
+
+    * Identificado por um espaço entre os seletores
+    * Busca um elemento dentro do outro
+    - Buscando um elemento de forma descendente
+        Ex: body article h2
+    */
+    article h2{
+        background-color: black;
+        color: white;
+    }
+
+    /* Child Combinator
+    * Identificado pelo sinal '>' entre dois seletores
+    * Seleciona somente o elemento que é filho direto do pai 
+    * Elementos sem ser filhos diretos serão desconsiderados
+        Exp: body > ul > li 
+    */
+    article > p {
+        border: 5px solid red;
+    }
+
+    
+    /* Adjacent Sibling Combinator
+    * Identificado pelo sinal '+' entre dois seletores
+    * Seleciona somente o elemento que é irmão direto na hierarquia 
+        Exo: h1 + p
+    */
+    article + article {
+        border-top: 10px solid blue;
+    }
+
+    button + button {
+        margin-left: 2rem;
+    }
+
+
+/* General Sibling Combinator
+* Identificado pelo sinal '~' entre dois Seletores
+* Seleciona todos os elementos irmãos 
+    Exp: h1 ~ p*/
+article ~ article h2 {
+    color: aquamarine;
+}
+
+article ~ article h2[class="sorvete"] {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Dica
+Seletores muito específicos tendem a causar dificuldades no reuso das regras de estilização dos elementos
+Muitas vezes, um simples uso de classes, torna o trabalho mais eficiente */

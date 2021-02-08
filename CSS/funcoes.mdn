@@ -1,0 +1,14 @@
+# Funções
+* nome seguido do abre e fecha parentesis
+* recebe argumentos
+  
+## Exemplos:
+
+```css
+    @import url("https://urlaqui.com/styles.css")
+
+    {
+        color: rgb(255, 0, 100);
+        with: calc(100% - 10px)
+    }
+```

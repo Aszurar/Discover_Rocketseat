@@ -1,0 +1,59 @@
+
+/* Element Selector
+Tanto o h1, quanto p são seletores de elemento */
+
+h1 {
+    color: white;
+    font-size: 60px;
+}
+
+p {
+    color: red;
+    font-size: 2rem;
+}
+
+
+/* ID Selector 
+- Um elemento que possui o atributo 'id'
+- Cada id deverá ser único
+*/
+#title {
+    box-shadow: 5px 5px 5px rgb(62, 49, 253);
+}
+
+#description {
+    padding: 1rem;
+}
+
+
+/* Class selector
+- Os elementos que contenham o atributo classe
+- Podemos ter um ou mais classes
+- Os elmentos podem ter classes iguais caso queira alterar
+vários elementos de uma vez*/
+.red {
+    background-color: black;
+}
+
+.border {
+    border-radius: 1rem;
+}
+
+
+/* Atribute Selector
+- Selecionar um elemento que possui um atributo específico
+*/
+[title] {
+    text-align: center;
+    font-family: sans-serif;
+}
+
+
+/* Pseudo-class Element
+- Elementos em um estado específico(hover...)
+*/
+
+p:hover, h1:hover {
+    color: blueviolet;
+    transition: 0.5s;
+}

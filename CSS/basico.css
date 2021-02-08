@@ -1,0 +1,36 @@
+/* Comentários:  */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+* { 
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+#container {
+    width: 300px;
+}
+
+.m-40 {
+    margin: 40px;
+}
+
+h1, h2 {
+    color: blue;
+    font-size: 60px;
+    background: gray;
+}
+
+/* 
+* Selector - h1, .class, #id... - Procurar pela tag ou pelo elemento segundo seu identificador/classe/tag
+* Declaration - tudo que vem nas chaves
+* Properties - color, font-size...
+* Properties values - blue, 60px...
+
+Global Selector: *
+Element/Type Selector h1, h2, body, p div
+ID Selector #box #container
+Class Selector .red, .m-4...
+Atribute Selector/Pseudo-class,Pseudo-Element...
+*/
